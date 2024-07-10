@@ -1,0 +1,107 @@
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+/* navbar styles start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: navy;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: fixed;
+  width: 100%;
+  align-items: center;
+}
+.navbar > .nav-brand {
+  font-weight: 700;
+  font-size: 1.563rem;
+}
+.navbar > .nav-link {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+/* navbar styles end */
+/* main section style start */
+.main-section {
+  padding-top: 1.8rem;
+  background-image: url("./maxresdefault.jpg");
+  height: auto;
+  background-position: center;
+  background-size: cover;
+}
+.main-section > #main-sec-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  background: -webkit-linear-gradient(rgba(167, 167, 243, 0.804), blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-section > #main-sec-heading > span {
+  background: -webkit-linear-gradient(rgb(145, 3, 3), rgb(218, 218, 243));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-section > #main-para {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  text-align: center;
+  color: aliceblue;
+}
+/* main section style end */
+
+/* travel-section start */
+.travel-section {
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.travel-section > #travel-item {
+  width: auto;
+}
+#img-cont > img {
+  height: 12.5rem;
+}
+#travel-title > h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+#travel-desc > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+/* travel-section end */
+
+/* media queries for responsive design */
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar > .nav-link {
+    display: block;
+    text-align: right;
+  }
+  .main-section {
+    display: relative;
+  }
+  .main-section > #main-sec-heading {
+    font-size: 2.5rem;
+  }
+  .main-section > #main-para {
+    font-size: 1rem;
+  }
+}
+/* media queries for responsive design */
